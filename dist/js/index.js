@@ -17,9 +17,29 @@ statisticsNav.addEventListener('click', function (e) {
   console.log(e.target.id);
   dashboardDisplay.classList.add(`hidden`);
   appContainer.classList.remove(`hidden`);
-  fetch('/api/v1/dashboard')
-    .then(res => res)
-    .then(data => console.log(data));
+  appContainer.classList.add('flex');
+  fetch('http://192.168.18.41:3000/api/v1/weddings')
+    .then(res => res.json())
+    .then(data => {
+      console.log(data);
+      appContainer.innerHTML = data
+        .map(wedding => {
+          return `
+                    <div id=${wedding._id} class=" w-[200px] bg-slate-200 flex flex-col space-y-4">
+                      <h1>${wedding.name}</h1>
+                      <p>${wedding.date}</p>
+                      <p>${wedding.email}</p>
+                      <p>${wedding.venue}</p>
+                      <p>${wedding.decoration}</p>
+                      <p>${wedding.photographer}</p>
+                      <p>${wedding.videographer}</p>
+                    
+                    </div>
+        `;
+        })
+        .join(' ');
+    })
+    .catch(err => console.log(err));
 });
 
 dashboardNav.addEventListener('click', function (e) {

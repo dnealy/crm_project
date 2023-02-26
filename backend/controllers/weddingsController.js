@@ -59,7 +59,9 @@ async function createWedding(req, res, next) {
   });
 
   try {
+    // await saving the new wedding
     await newWedding.save();
+    // once saved respond
     res.json(newWedding);
   } catch (err) {
     console.log(err);
@@ -67,8 +69,10 @@ async function createWedding(req, res, next) {
   }
 }
 
+// update wedding
 async function updateWedding(req, res) {
-  const { id } = req.params.id;
+  // extract id from req.params
+  const id = req.params.id;
   const {
     name,
     email,
@@ -102,7 +106,7 @@ async function updateWedding(req, res) {
 }
 
 async function deleteWedding(req, res) {
-  const { id } = req.params;
+  const id = req.params.id;
   try {
     const wedding = await Wedding.findByIdAndDelete(id);
     if (!wedding) {

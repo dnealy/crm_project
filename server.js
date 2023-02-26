@@ -11,6 +11,17 @@ const dotenv = require('dotenv');
 
 app.use(morgan('combined'));
 
+// sets cors open for requests from the front-end
+app.use((req, res, next) => {
+  // green lists the ip
+  res.setHeader('Access-Control-Allow-Origin', 'http://192.168.18.41:5500');
+  // allows all methods
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+  // sets content type
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  next();
+});
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
