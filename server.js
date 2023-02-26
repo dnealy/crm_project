@@ -7,6 +7,7 @@ const mongoose = require('mongoose');
 const db = require('./db.js');
 const weddingRouter = require('./backend/routes/weddingRoutes');
 const morgan = require('morgan');
+const dotenv = require('dotenv');
 
 app.use(morgan('combined'));
 

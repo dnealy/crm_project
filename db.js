@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
+const dotenv = require('dotenv').config();
+console.log(process.env);
 
-const uri =
-  'mongodb+srv://demureaxs:Thomas1987@cluster0.betekzw.mongodb.net/balievecrm?retryWrites=true&w=majority';
+const uri = process.env.DB_URL;
 
 const dbName = 'balievecrm';
 
