@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/build.css" />
+    <script src="./js/index.js" defer></script>
+    <title>Recruitment App</title>
+  </head>
+  <body class="retched">
+    <main class="min-h-screen flex w-screen max-w-screen-2xl mx-auto">
+      <div class="flex w-screen h-full">
+        <div class="max-w-screen-xl mx-auto rounded-l-lg overflow-hidden">
+          <header
+            class="h-screen bg-gray-900 min-w-[300px] w-1/5 p-6 flex flex-col justify-between text-white space-y-10"
+          >
+            <div class="space-y-10">
+              <div class="flex justify-between items-center">
+                <div class="h-20 w-20 bg-white rounded-full overflow-hidden">
+                  <img
+                    src="https://static.wixstatic.com/media/7aa955_48f6f654625d453494dd84daa7c57e92~mv2_d_1654_1654_s_2.jpg/v1/fill/w_326,h_326,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/7aa955_48f6f654625d453494dd84daa7c57e92~mv2_d_1654_1654_s_2.jpg"
+                  />
+                </div>
+                <HiOutlineBellAlert class="text-white h-8 w-8" />
+              </div>
+              <div class="flex flex-col space-y-4 list-none">
+                <div
+                  id="dashboardNav"
+                  class="flex items-center pl-4 rounded-lg bg-slate-700 cursor-pointer hover:opacity-80"
+                >
+                  <!-- <GoProject class="h-6 w-6" /> -->
+                  <li class="p-4">Dashboard</li>
+                </div>
+
+                <div
+                  id="statisticsNav"
+                  class="flex items-center pl-4 rounded-lg bg-slate-700 cursor-pointer hover:opacity-80"
+                >
+                  <!-- <GoGraph class="h-6 w-6" /> -->
+                  <li class="p-4">Statistics</li>
+                </div>
+
+                <div
+                  id="projectsNav"
+                  class="flex items-center pl-4 rounded-lg bg-slate-700 cursor-pointer hover:opacity-80"
+                >
+                  <!-- <GoCalendar class="h-6 w-6" /> -->
+                  <li class="p-4">Projects</li>
+                </div>
+
+                <div
+                  id="usersNav"
+                  class="flex items-center pl-4 rounded-lg bg-slate-700 cursor-pointer hover:opacity-80"
+                >
+                  <!-- <FiUsers class="h-6 w-6" /> -->
+                  <li class="p-4">Users</li>
+                </div>
+
+                <div
+                  id="messagesNav"
+                  class="flex items-center pl-4 rounded-lg bg-slate-700 cursor-pointer hover:opacity-80"
+                >
+                  <!-- <GoCommentDiscussion class="h-6 w-6" /> -->
+                  <li class="p-4">Messages</li>
+                </div>
+
+                <div
+                  id="filesNav"
+                  class="flex items-center pl-4 rounded-lg bg-slate-700 cursor-pointer hover:opacity-80"
+                >
+                  <!-- <GoFile class="h-6 w-6" /> -->
+                  <li class="p-4">Files</li>
+                </div>
+
+                <div
+                  id="settingsNav"
+                  class="flex items-center pl-4 rounded-lg bg-slate-700 cursor-pointer hover:opacity-80"
+                >
+                  <!-- <GoSettings class="h-6 w-6" /> -->
+                  <li class="p-4">Settings</li>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex justify-between p-4 bg-slate-700 items-center rounded-lg"
+            >
+              <div class="flex space-x-4 items-center">
+                <div class="h-12 w-12 rounded-full bg-white overflow-hidden">
+                  <img src="" />
+                </div>
+
+                <div class="flex flex-col space-y-2">
+                  <p class="text-sm font-semibold">Maxamillian Bumfart</p>
+
+                  <button
+                    class="py-1 px-4 bg-red-500 mx-auto rounded-lg text-xs font-semibold"
+                  >
+                    Premium
+                  </button>
+                </div>
+              </div>
+              <!-- <GoPencil class="h-4 w-4 self-start" /> -->
+            </div>
+          </header>
+        </div>
+        <div id="appContainer" class="flex-1 hidden"></div>
+        <section
+          id="dashboardDisplay"
+          class="flex-1 h-screen relative flex flex-col gap-4"
+        >
+          <div
+            class="flex items-center justify-between py-6 px-4 text-gray-800"
+          >
+            <div class="flex items-center text-2xl font-bold space-x-6">
+              <!-- <GoChevronLeft /> -->
+
+              <h2>First Project</h2>
+
+              <!-- <GoPencil class="text-blue-500" /> -->
+            </div>
+            <div class="flex">
+              <div class="flex -space-x-4 text-white items-center">
+                <div
+                  class="h-12 w-12 rounded-full bg-gray-500 border-2 border-white flex items-center justify-center overflow-hidden shadow-lg"
+                >
+                  <img src="" />
+                </div>
+
+                <div
+                  class="h-12 w-12 rounded-full bg-gray-500 border-2 border-white flex items-center justify-center overflow-hidden shadow-lg"
+                >
+                  <img src="" />
+                </div>
+
+                <div
+                  class="h-12 w-12 rounded-full bg-gray-500 border-2 border-white flex items-center justify-center overflow-hidden shadow-lg"
+                >
+                  <img src="" />
+                </div>
+
+                <div
+                  class="h-12 w-12 rounded-full bg-gray-500 border-2 border-white flex items-center justify-center overflow-hidden shadow-lg"
+                >
+                  <img src="" />
+                </div>
+
+                <div
+                  class="h-12 w-12 rounded-full bg-gray-500 border-2 border-white flex items-center justify-center overflow-hidden shadow-lg"
+                >
+                  +12
+                </div>
+              </div>
+
+              <div
+                class="h-12 w-12 rounded-full bg-gray-500 border-2 border-white flex justify-center items-center text-3xl text-white text-center shadow-lg"
+              >
+                #
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex w-full justify-between px-4 max-h-[28%] gap-4 text-gray-700"
+          >
+            <div class="grid grid-cols-2 grid-rows-2 w-[45%] gap-4">
+              <div
+                class="rounded-xl text-sm font-semibold flex justify-between p-4 bg-blue-600 border border-slate-200 shadow-lg"
+              >
+                <div
+                  class="flex-1 flex flex-col justify-between space-y-1 text-slate-100"
+                >
+                  <h2 class="text-3xl font-bold">50</h2>
+                  <p>Total Tasks</p>
+                  <aside>+1 this week</aside>
+                </div>
+                <!-- <GoKebabVertical class="h-6 w-6 text-white" /> -->
+              </div>
+
+              <div
+                class="rounded-xl text-sm font-semibold flex justify-between p-4 bg-slate-100 border border-slate-200 shadow-lg"
+              >
+                <div class="flex-1 flex flex-col justify-between space-y-1">
+                  <h2 class="text-3xl font-bold">12</h2>
+                  <p>Completed</p>
+                  <aside>+1 this week</aside>
+                </div>
+                <!-- <GoKebabVertical class="h-6 w-6 text-gray-800" /> -->
+              </div>
+
+              <div
+                class="rounded-xl text-sm font-semibold flex justify-between p-4 bg-slate-100 border border-slate-200 shadow-lg"
+              >
+                <div class="flex-1 flex flex-col justify-between space-y-1">
+                  <h2 class="text-3xl font-bold">3</h2>
+                  <p>Overdue Tasks</p>
+                  <aside>+1 this week</aside>
+                </div>
+                <!-- <GoKebabVertical class="h-6 w-6 text-gray-800" /> -->
+              </div>
+
+              <div
+                class="rounded-xl text-sm font-semibold flex justify-between p-4 bg-slate-200 border border-slate-200 shadow-lg"
+              >
+                <div class="flex-1 flex flex-col justify-between space-y-1">
+                  <h2 class="text-3xl font-bold">35</h2>
+                  <p>Todo Tasks</p>
+                  <aside>+12 this week</aside>
+                </div>
+                <!-- <GoKebabVertical class="h-6 w-6 text-gray-800" /> -->
+              </div>
+            </div>
+            <div class="grid grid-cols-5 flex-1 gap-4">
+              <div
+                class="bg-green-100 rounded-xl col-span-3 p-6 flex flex-col justify-between border border-slate-200 shadow-lg"
+              >
+                <p class="text-4xl font-bold">
+                  Get <span class="text-blue-500">Premium+</span> to manage more
+                  than 100 projects
+                </p>
+                <p>Learn More <span>&rarr;</span></p>
+              </div>
+              <div
+                class="bg-slate-100 rounded-xl col-span-2 flex flex-col justify-evenly items-center p-6 text-gray-700 border border-slate-200 shadow-lg"
+              >
+                <div
+                  class="border-[12px] border-blue-500 h-32 w-32 rounded-full flex justify-center items-center"
+                >
+                  <div class="font-bold text-2xl">40%</div>
+                </div>
+                <p class="text-center font-semibold">of project is completed</p>
+              </div>
+            </div>
+          </div>
+          <div class="h-[365px] px-4">
+            <div class="h-full rounded-lg flex gap-4">
+              <div
+                class="bg-slate-100 h-full flex-1 rounded-xl p-6 text-gray-700 space-y-6 overflow-y-scroll xl:overflow-y-clip border border-slate-200 shadow-lg"
+              >
+                <div class="space-y-1">
+                  <h1><span class="font-bold">Wedding:</span> Bob and Mike</h1>
+                  <p><span class="font-bold">Date:</span> 18/12/24</p>
+                  <p><span class="font-bold">Venue:</span> Random Venue</p>
+                  <p><span class="font-bold">Guests:</span> 200</p>
+                  <p><span class="font-bold">Budget:</span> $1,200,000</p>
+                </div>
+                <div class="space-y-1">
+                  <h3 class="font-bold">Notes:</h3>
+                  <p class="space-y-1">
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium doloremque laudantium, totam rem
+                    aperiam, eaque ipsa quae ab illo inventore veritatis et
+                    quasi architecto beatae vitae dicta sunt explicabo.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="bg-slate-100 h-full flex-1 rounded-xl p-6 text-gray-700 border border-slate-200 shadow-lg space-y-4"
+              >
+                <p class="font-bold">Budget link:</p>
+                <a>{faker.internet.url()}</a>
+                <p class="font-bold">Rundown:</p>
+                <a>{faker.internet.url()}</a>
+                <p class="font-bold">Vendors:</p>
+                <a>{faker.internet.url()}</a>
+                <p class="font-bold">Venue:</p>
+                <a>{faker.internet.url()}</a>
+              </div>
+              <div
+                class="bg-slate-100 h-full flex-1 rounded-xl space-y-4 p-6 text-gray-700 border border-slate-200 shadow-lg"
+              >
+                <p>{faker.lorem.paragraph()}</p>
+
+                <p>
+                  One of the guys said hes going to pay a performer to polish
+                  off a horses falluce with a bristly brushand watch as he gets
+                  kicked in the head.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex-1 px-4 text-xs">
+            <div
+              class="bg-slate-100 rounded-xl h-full grid grid-cols-12 gap-2 overflow-hidden relative border border-slate-200"
+            >
+              <div class="col-span-1 border-r border-gray-200 text-right p-2">
+                <p>Jan</p>
+              </div>
+              <div class="col-span-1 border-r border-gray-200 text-right p-2">
+                <p>Feb</p>
+              </div>
+              <div class="col-span-1 border-r border-gray-200 text-right p-2">
+                <p>Mar</p>
+              </div>
+              <div class="col-span-1 border-r border-gray-200 text-right p-2">
+                <p>Apr</p>
+              </div>
+              <div class="col-span-1 border-r border-gray-200 text-right p-2">
+                <p>May</p>
+              </div>
+              <div class="col-span-1 border-r border-gray-200 text-right p-2">
+                <p>Jun</p>
+              </div>
+              <div class="col-span-1 border-r border-gray-200 text-right p-2">
+                <p>Jul</p>
+              </div>
+              <div class="col-span-1 border-r border-gray-200 text-right p-2">
+                <p>Aug</p>
+              </div>
+              <div class="col-span-1 border-r border-gray-200 text-right p-2">
+                <p>Sep</p>
+              </div>
+              <div class="col-span-1 border-r border-gray-200 text-right p-2">
+                <p>Oct</p>
+              </div>
+              <div class="col-span-1 border-r border-gray-200 text-right p-2">
+                <p>Nov</p>
+              </div>
+              <div class="col-span-1 border-r border-gray-200 text-right p-2">
+                <p>Dec</p>
+              </div>
+              <div
+                class="h-full grid grid-cols-12 grid-rows-3 absolute gap-2 top-0 left-0 z-10 w-full"
+              >
+                <div
+                  class="col-span-3 row-span-1 col-start-3 row-start-2 bg-green-500 rounded-lg flex justify-start items-center pl-4 border border-slate-200 h-10 shadow-lg"
+                >
+                  <h1>Max and James</h1>
+                </div>
+
+                <div
+                  class="col-span-3 row-span-1 col-start-8 row-start-3 bg-yellow-500 rounded-lg flex justify-start items-center pl-4 border border-slate-200 h-10 shadow-lg"
+                >
+                  <h1>Sally and Balthazar</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
